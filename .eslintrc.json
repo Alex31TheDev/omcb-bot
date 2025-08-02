@@ -1,0 +1,23 @@
+{
+    "env": {
+        "node": true,
+        "es2023": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "script"
+    },
+    "rules": {
+        "no-unused-vars": "off",
+        "no-ex-assign": "off",
+        "no-case-declarations": "off",
+        "no-constant-condition": "off",
+        "no-empty": "off",
+        "no-debugger": "off",
+        "no-global-assign": "off",
+        "no-useless-escape": "warn",
+        "eqeqeq": ["error", "always", { "null": "ignore" }]
+    }
+}

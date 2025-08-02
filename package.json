@@ -1,0 +1,27 @@
+{
+    "name": "omcb-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "format": "prettier --config .prettierrc --write **/*.{js,cjs,json}",
+        "lint": "eslint . --config .eslintrc.json --ignore-path .gitignore --ext .js",
+        "build-protobuf": "npx pbjs -t static-module --js_out=import_style=commonjs,binary -o chess.js chess.proto"
+    },
+    "dependencies": {
+        "fzstd": "^0.1.1",
+        "lodepng": "^2.3.0",
+        "protobufjs": "^7.5.0",
+        "puppeteer": "^24.15.0",
+        "puppeteer-extra": "^3.3.6",
+        "puppeteer-extra-plugin-stealth": "^2.11.2",
+        "stream-chain": "^3.4.0",
+        "stream-json": "^1.9.1",
+        "ws": "^8.18.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.1",
+        "prettier": "^3.6.2",
+        "protobufjs-cli": "^1.2.0"
+    }
+}
